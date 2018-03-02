@@ -67,9 +67,12 @@ who5 %>%
 ?tibble::enframe
 enframe(c(a = 5, b = 7))
 
+
 ##3(table4 to table6)
 library(foreign)
 library(stringr)
+library(dplyr)
+library(tidyr)
 library(plyr)
 library(reshape2)
 
@@ -132,7 +135,6 @@ table8$date.entered <- as.Date(table8$date.entered, origin = "1970-01-01")
 names(table8)[5] <- "date"
 table8 <- arrange(table8,track)
 table8 <- arrange(table8,artist)
-
 
 
 
